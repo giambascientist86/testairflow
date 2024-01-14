@@ -1,10 +1,11 @@
 
 # Importing  modules
 import airflow
+import kafka_streaming_csv
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
-from kafka_streaming_csv_file import initiate_stream  
+from kafka_streaming_csv import initiate_stream  
 # Configuration for the DAG's start date
 DAG_START_DATE = datetime(2023, 1, 14, 14, 10)
 
